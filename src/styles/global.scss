@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --background: #121414;
+    --shape: #1F2729;
+    --grey-light: #E1E1E6;
+    --grey-medium: #A8A8B3;
+    --grey-bold: #29292E;
+    --yellow: #EBA417;
+    --green: #04D361;
+    --blue: #61DCFB;
+    --white:#FFF;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    background-color: var(--background);
+    color: var(--white);
+}
+
+body, button, textarea, input, select{
+    font: 400 1.6rem 'Roboto',sans-serif;
+}
+
+button{
+    cursor: pointer;
+}
+
+a{
+    color: inherit;
+    text-decoration: none;
+}
