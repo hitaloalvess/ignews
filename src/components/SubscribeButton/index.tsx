@@ -1,5 +1,4 @@
 import { useSession, signIn } from 'next-auth/client';
-import { toast } from 'react-toastify';
 import { api } from '../../services/api';
 import { getStripeJs } from '../../services/stripe-js';
 import styles from './styles.module.scss';
@@ -27,7 +26,6 @@ export function SubscribeButton({ productId } : SubscribeButtonProps){
             await stripe.redirectToCheckout( {sessionId} );
 
         }catch(error){
-            // toast.error(error)
             alert(error)
         }
     }

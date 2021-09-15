@@ -39,8 +39,10 @@ export default async (req : NextApiRequest, res: NextApiResponse) => {
         try{
             //Se secret for igual a process.env... então quer dizer que os dados estão vindos do stripe, assim o event é validado e inserido dentro de event
             event = stripe.webhooks.constructEvent(buf, secret, process.env.STRIPE_WEBHOOK_SECRET)
+            console.log('Dentro do try');
             
         }catch(error){
+            console.log('Dentro do catch')
             console.log(error);
             return res.status(400).json(`Webhook error: ${error.message}`)
         }
