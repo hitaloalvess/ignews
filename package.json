@@ -8,9 +8,10 @@
     "start": "next start",
     "lint": "next lint",
     "stripe": "stripe.exe listen  --forward-to localhost:3000/api/webhooks",
-    "stripe-login":"stripe.exe login"
+    "stripe-login": "stripe.exe login"
   },
   "dependencies": {
+    "@prismicio/client": "^5.1.0",
     "@stripe/stripe-js": "^1.17.1",
     "axios": "^0.21.4",
     "faunadb": "^4.4.1",

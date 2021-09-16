@@ -4,6 +4,7 @@
     padding: 11rem 0 ;
     margin: 0 auto;
     display: flex;
+    align-items: center;
     justify-content: space-between;
 }
 
@@ -21,11 +22,16 @@
 
     h1{
         font-size: 7.2rem;
+        line-height: 7.2rem;
         font-weight: 900;
         margin-bottom: 2.4rem;    
     }
 
     span{
         color: var(--blue);
+    }
+
+    button{
+        margin-top: 4rem;
     }
 }
