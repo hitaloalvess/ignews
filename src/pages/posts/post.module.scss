@@ -1,0 +1,63 @@
+.postContainer{
+    max-width: 112rem;
+    margin: 0 auto;
+
+    .post{
+        max-width: 72rem;
+        margin: 8rem auto 0;
+        
+        h1{
+            font-size: 5rem;
+            line-height: 6rem;
+            font-weight: 900;
+        }
+
+        time{
+            display: block;
+            font-size: 1.6rem;
+            line-height: 2.6rem;
+            margin: 2.5rem 0;
+            color: var(--grey-medium);
+        }
+
+        .postContent{
+            font-size: 1.8rem;
+            line-height: 3rem;
+
+            p,ul{
+                margin: 2.3rem 0;
+            }
+
+            ul{
+                padding-left: 2.3rem;
+            }
+            &.previewContent{
+                background: linear-gradient(var(--grey-light), transparent);
+                background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+        }
+
+
+        .continueReading{
+            padding: 2rem;
+            text-align: center;
+            font-size: 2rem;
+            font-weight: bold;
+            line-height: 2.34rem;
+            border-radius: 100rem;
+            background-color: var(--shape);
+
+            a{
+                color: var(--yellow);
+                margin: 0 0.5rem;
+
+                &:hover{
+                    text-decoration: underline;
+                }
+            }
+        }
+        
+    }
+
+}
