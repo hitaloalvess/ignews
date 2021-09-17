@@ -14,11 +14,11 @@ type Post = {
     updateAt: string;
 }
 interface PostsProps{
-    posts1: Post[]
+    posts: Post[]
 }
 
 import styles from './styles.module.scss';
-export default function Posts({ posts1 } : PostsProps){
+export default function Posts({ posts } : PostsProps){
     return(
         <>
             <Head>
@@ -27,7 +27,7 @@ export default function Posts({ posts1 } : PostsProps){
 
             <main className={styles.container}>
                 <div className={styles.post}>
-                    {   posts1.map( post => (
+                    {   posts.map( post => (
                             <a key={post.slug} href="#" >
                                 <time>{post.updateAt}</time>
                                 <strong>{post.title}</strong>
@@ -53,7 +53,7 @@ export const getStaticProps: GetStaticProps = async() => {
         }
     )
 
-    const posts1 = response.results.map(post => {
+    const posts = response.results.map(post => {
         return {
             slug: post.uid,
             title: RichText.asText(post.data.title),
@@ -66,10 +66,9 @@ export const getStaticProps: GetStaticProps = async() => {
         };
     })
 
-    console.log(posts1)
     return {
         props:{
-            posts1
+            posts
         }
     }
 }
