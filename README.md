@@ -1,6 +1,6 @@
 
 <h1 align="center">
-  <img alt="ignews" title="ignews" src=".github/logo.png" width="400px" />
+  <img alt="ignews" title="ignews" src=".github/logo.svg" width="400px" />
 </h1>
 
 <!-- <p align="center">
