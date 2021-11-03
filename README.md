@@ -28,9 +28,9 @@ Este projeto foi desenvolvido com as seguintes tecnologias:
 ## 💻 Projeto
 
 <p>A aplicação ig.news é um blog de notícias, no qual usuários podem ter acesso aos conteúdos completos através de um sistema de assinatura.</p>
-<p>Esse sistema é criado através de uma integração realizada com o gateway `Stripe` e `FaunaDB`, onde após o usuário preencher seus dados de pagamento e e o mesmo for aprovado, terá assim uma assinatura ativa e apta para visualizar todo o conteúdo do blog. Caso o usuário não deseje optar pela assinatura, ele terá um acesso limitado ao conteúdo de cada post.</p>
-<p>As postagens são criadas e editadas através do Headless CMS `Prismic`, e integradas pelo front junto a aplicação.</p>
-<p>No desenvolvimento de ig.news optou-se por utilizar recursos e ferramentas que o transformaram em uma aplicação Serveless, pois todo o processo que dependeria de um backend foi integrado totalmente dentro do front através das api routes do `Next.js` e sua arquitetura foi desenvolvida tendo como base o padrão JAMStack.</p>
+<p>Esse sistema é criado através de uma integração realizada com o gateway <strong>Stripe</strong> e <strong>FaunaDB</strong>, onde após o usuário preencher seus dados de pagamento e e o mesmo for aprovado, terá assim uma assinatura ativa e apta para visualizar todo o conteúdo do blog. Caso o usuário não deseje optar pela assinatura, ele terá um acesso limitado ao conteúdo de cada post.</p>
+<p>As postagens são criadas e editadas através do Headless CMS <strong>Prismic</strong>, e integradas pelo front junto a aplicação.</p>
+<p>No desenvolvimento de ig.news optou-se por utilizar recursos e ferramentas que o transformaram em uma aplicação Serveless, pois todo o processo que dependeria de um backend foi integrado totalmente dentro do front através das api routes do <strong>Next.js</strong> e sua arquitetura foi desenvolvida tendo como base o padrão JAMStack.</p>
 
 ## ⌨ Como usar?
 
